@@ -53,11 +53,23 @@ componentProps:
 
 ### Listen to changes
 
-You can listen to changes by using the `@change` event. The event will emit the index of the selected item.
+You can listen to changes by using the `@change` events. The event will emit the index of the selected item.
 
 ::component-example
 ---
 component: 'tabs-example-change'
+componentProps:
+  class: 'w-full'
+---
+::
+
+### Disable content
+
+If you don't need the content markup but just the tabs, you can specify a `contentless` prop to disable it.
+
+::component-example
+---
+component: 'tabs-example-contentless'
 componentProps:
   class: 'w-full'
 ---
